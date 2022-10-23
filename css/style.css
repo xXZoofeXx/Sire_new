@@ -773,3 +773,18 @@ a {
   position: absolute;
   right: 0;
 }
+
+/* -------------------------------------------------ABOUT PAGE */
+
+.about-1post{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 595px;
+  margin-top: 96px;
+}
+
+.about-2post{
+  background: url('/images/AboutBGPic.png');
+  height: 500px;
+}
