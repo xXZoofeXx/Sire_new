@@ -820,7 +820,7 @@ a {
   position: relative;
 }
 
-.btn::after{
+.btn::after {
   content: "";
   display: block;
   width: 100%;
@@ -839,7 +839,7 @@ a {
   color: #FFB577;
 }
 
-.btn:hover::after{
+.btn:hover::after {
   display: block;
 }
 
@@ -885,3 +885,73 @@ a {
   height: 351px;
 }
 
+/* ------------------------------------------------------------OUR STORY PAGE*/
+
+.story-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
+  margin-top: 96px;
+}
+
+.story-block__title-box {
+  width: 515px;
+}
+
+.story-block__title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.story-block__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #B8B8B8;
+  margin-bottom: 16px;
+}
+
+.story-block__pic-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 544px;
+  height: 540px;
+  margin-top: 32px;
+}
+
+.story-block__pic1 {
+  margin-top: auto;
+}
+
+.story-block__pic2 {
+  margin-bottom: auto;
+}
+
+.story-block__inner{
+  width: 538px;
+  margin-bottom: auto;
+  margin-right: 77px;
+}
+
+.story-block__inner-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.lighted{
+  color: #FFB577;
+}
