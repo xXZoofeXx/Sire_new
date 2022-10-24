@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="#">
+                        <img src="images/Logo.svg" alt="">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="./Menu.html">Menu</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="./About.html">About us</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Our story</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="Menu__header">
+                    <div class="ourMenu-post__tag">
+                        <h4 class="ourMenu-post__tag-text">OUR MENU</h4>
+                        <img src="./images/Line.svg" alt="" srcset="">
+                    </div>
+                    <div class="ourMenu-post__slogan">
+                        <h1 class="ourMenu-post__slogan-title">Discover our menu chart</h1>
+                        <p class="ourMenu__slogan-text">Through True Rich Attended does no end it his mother since
+                            favourable real had half every him case in packages enquire we up ecstatic.. Through True
+                            Rich Attended does no end it his mother</p>
+                    </div>
+                </div>
+                <div class="Menu__btn-container" id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">All</button>
+                    <button class="btn" onclick="filterSelection('fast')">Fast Food</button>
+                    <button class="btn" onclick="filterSelection('coffee')">Coffee</button>
+                    <button class="btn" onclick="filterSelection('cocktails')">Cocktails</button>
+                    <button class="btn" onclick="filterSelection('cake')">Quafe Cake</button>
+                    <button class="btn" onclick="filterSelection('snacks')">Snacks</button>
+                </div>
+                <div class="row">
+                    <div class="column fast">
+                        <div class="content">
+                            <img src="./images/ChickenBurger.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Chicken Burger</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$8.85</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fast">
+                        <div class="content">
+                            <img src="./images/FrenchFries.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">French Fries</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$7.85</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fast">
+                        <div class="content">
+                            <img src="./images/ChineseSoup.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Chinese Soup</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$8.85</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column fast">
+                        <div class="content">
+                            <img src="./images/ChowminNoodle.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Chowmin Noodle</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$8.85</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column coffee">
+                        <div class="content">
+                            <img src="./images/DrpCoffee.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Drp Coffee</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$8.85</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column coffee">
+                        <div class="content">
+                            <img src="./images/DalgonaCoffee.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Dalgona Coffee</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$4.97</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column cocktails">
+                        <div class="content">
+                            <img src="./images/CokaCola.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Coka Cola</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$3.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column cocktails">
+                        <div class="content">
+                            <img src="./images/Cocktails.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Cocktail</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$8.85</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column cake">
+                        <div class="content">
+                            <img src="./images/ChocoCupCake.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Choco Cup Cake</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$4.85</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column cake">
+                        <div class="content">
+                            <img src="./images/QuafeBrade.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Quafe Brade</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$7.85</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column snacks">
+                        <div class="content">
+                            <img src="./images/Sandwitch.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Sandwitch</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$3.97</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column snacks">
+                        <div class="content">
+                            <img src="./images/FruitSalad.png" alt="" srcset="">
+                            <div class="menu-block-text">
+                                <h6 class="ourMenu-post__grid-container-item-name">Fruit Salad</h6>
+                                <h6 class="ourMenu-post__grid-container-item-price">$3.97</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__contact">
+                    <div class="footer__text">
+                        <ul class="footer__contact-list">
+                            <li class="footer__contact-list-title">
+                                <h4>Working Hour</h4>
+                            </li>
+                            <li class="footer_contact-list-text">
+                                <p>Sunday to Saturday<br>
+                                    09:00 AM to 11:00 PM</p>
+                            </li>
+                        </ul>
+                        <ul class="footer__contact-list">
+                            <li class="footer__contact-list-title">
+                                <h4>Location</h4>
+                            </li>
+                            <li class="footer_contact-list-text">
+                                <p>Street - 127, New York,<br>
+                                    United States<br>
+                                    546544</p>
+                            </li>
+                        </ul>
+                        <ul class="footer__contact-list">
+                            <li class="footer__contact-list-title">
+                                <h4>Contact us</h4>
+                            </li>
+                            <li class="footer_contact-list-text">
+                                <p>+123456789 <br>
+                                    hey@yourdomain.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map">
+                        <img src="./images/Map.svg" alt="" class="footer__map">
+                    </div>
+                </div>
+                <div class="footer__copiright">
+                    <p>© 2021 Finsweet | All rights reserved.</p>
+                    <ul class="social-list">
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <img src="./images/FacebookIcon.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <img src="./images/TwitterIcon.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <img src="./images/InstaIcon.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <img src="./images/LimkedInIcon.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contact-button-box">
+                        <a href="#" class="contact-button">Contact us</a>
+                        <img src="./images/ArrowIcon.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
