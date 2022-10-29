@@ -1116,3 +1116,145 @@ a {
 .lighted {
   color: #FFB577;
 }
+
+/* -------------------------------------------------------CONTACT PAGE */
+
+.contact__post {
+  margin-top: 96px;
+  display: flex;
+  height: 583px;
+  margin-bottom: 160px;
+}
+
+.contact__form-block {
+  width: 658px;
+}
+
+.contact__form-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  margin-bottom: 24px;
+}
+
+.contact__form-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.contact__form {
+  width: 625px;
+  margin-bottom: 32px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.form-item-message {
+  grid-column: 1 / 3;
+}
+
+input {
+  background: transparent;
+}
+
+textarea {
+  background: transparent;
+  resize: none;
+}
+
+.form-item {
+  height: 56px;
+  border: 1px solid #FFFFFF0A;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 14px 32px 14px 32px;
+}
+
+.form-item-message {
+  height: 147px;
+  border: 1px solid #FFFFFF0A;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 14px 32px 14px 32px;
+}
+
+.form-item-message::placeholder {
+  margin-bottom: auto;
+}
+
+.contact__form-button {
+  width: 213px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #27252D;
+  border: none;
+  padding: 14px 32px 14px 32px;
+  cursor: pointer;
+  transition: background .1s linear;
+}
+
+.contact__form-button:hover{
+  background: #fc894d;
+  color: #19161B;
+}
+
+.contact__form-button:active{
+  box-shadow: 2px 2px 5px #fc894d;
+}
+
+.sendMessage-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
+.sendMessage-arrow{
+  width: 20px;
+}
+
+.contact__pics{
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__pics1{
+  width: 240px;
+  height: 500px;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.contact__pics2{
+  width: 240px;
+  height: 500px;
+  margin-bottom: auto;
+  margin-left: 64px;
+}
