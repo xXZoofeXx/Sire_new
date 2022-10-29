@@ -785,11 +785,172 @@ a {
 }
 
 .about-2post {
-  background: url('/images/AboutBGPic.png');
   height: 500px;
+  position: relative;
+  margin-top: 160px;
 }
 
+.about-2post__bg {
+  position: absolute;
+  height: 500px;
+  z-index: auto;
+}
 
+.about-2post__bgover {
+  position: absolute;
+  height: 500px;
+  z-index: 1;
+}
+
+.about-2post__inner-textBlock {
+  width: 431px;
+  z-index: 3;
+  position: absolute;
+  margin-top: 124px;
+  margin-left: 80px;
+}
+
+.about-2post__inner-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+
+.about-2post__inner-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #B8B8B8;
+  margin-top: 24px;
+}
+
+.about-storyline {
+  background: #1F1D21;
+  height: 502px;
+}
+
+.about-storyline__title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-left: 80px;
+  margin-bottom: 70px;
+  padding-top: 80px;
+}
+
+.about-storyline__inner {
+  display: flex;
+  align-items: center;
+  margin-left: 37px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.about-storyline__dotline {
+  position: absolute;
+  width: 1090px;
+  height: 0px;
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  top: 1px;
+  left: 43px;
+}
+
+.about-storyline__block {
+  width: 240px;
+  position: relative;
+  margin-left: 43px;
+}
+
+.about-storyline__block-line {
+  width: 46px;
+  height: 0px;
+  border: 3px solid #FFB577;
+  position: absolute;
+
+}
+
+.about-storyline__block-list {
+  margin-top: 34px;
+}
+
+.about-storyline__block-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.about-storyline__block-middle {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.about-storyline__block-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #B8B8B8;
+}
+
+.about-standsPost {
+  display: flex;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.about-standsPost__title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  width: 564px;
+}
+
+.about-standsPost__inner {
+  width: 550px;
+  margin-left: 116px;
+}
+
+.about-standsPost__inner-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  margin-bottom: 24px;
+}
+
+.about-standsPost__inner-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #B8B8B8;
+}
 
 /* ---------------------------------------------------MENU PAGE */
 
@@ -936,7 +1097,7 @@ a {
   margin-bottom: auto;
 }
 
-.story-block__inner{
+.story-block__inner {
   width: 538px;
   margin-bottom: auto;
   margin-right: 77px;
@@ -952,6 +1113,6 @@ a {
   margin-bottom: 24px;
 }
 
-.lighted{
+.lighted {
   color: #FFB577;
 }
