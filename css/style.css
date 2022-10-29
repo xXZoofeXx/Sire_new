@@ -196,6 +196,13 @@ a {
   justify-content: space-between;
   height: 80px;
   align-items: center;
+  position: relative;
+}
+
+.warning{
+  position: absolute;
+  bottom: 0;
+  opacity: 0.3;
 }
 
 .social-list {
@@ -242,6 +249,41 @@ a {
 
 .contact-button:hover::after {
   display: block;
+}
+
+/* ---------------------------------------------------btn-up*/
+
+.btn-up{
+  position: fixed;
+  background-color: #2E2D33;
+  left: 50px;
+  bottom: 100px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: .3s;
+  
+  z-index: 1000;
+}
+
+.btn-up:hover{
+  background: #fc894d;
+}
+
+.btn-up::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+  background-image: url(../images/BtnUpArrow.svg);
+}
+
+.btn-up_hide{
+  display: none;
 }
 
 /* -----------------------------------------------main */
