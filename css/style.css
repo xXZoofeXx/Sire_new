@@ -45,6 +45,7 @@ body {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -121,6 +122,10 @@ a {
 }
 
 .menu__list-item {
+  padding-left: 40px;
+}
+
+.menu__list-item__new {
   padding-left: 40px;
 }
 
@@ -367,6 +372,22 @@ a {
 }
 
 /* -----------------------------------------------main */
+
+.pageNavigation{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background:#1F1D21 ;
+}
+
+.pageNavigation-list{
+  display: flex;
+  align-items: center;
+}
+
+.pageNavigation-item{
+  padding-left: 40px;
+}
 
 .header-post {
   height: 683px;
