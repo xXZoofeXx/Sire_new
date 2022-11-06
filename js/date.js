@@ -1,0 +1,1 @@
+document.getElementById('formDate').valueAsDate = new Date();

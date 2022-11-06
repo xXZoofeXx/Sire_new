@@ -86,3 +86,4 @@ const PicFrame = {
 }
 
 PicFrame.addEventListener();
+

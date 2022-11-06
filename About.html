@@ -30,7 +30,7 @@
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="./Menu.html">Menu</a>
                             </li>
-                            <li class="menu__list-item menu__list-item_active" >
+                            <li class="menu__list-item menu__list-item_active">
                                 <a class="menu__list-link" href="./About.html">About us</a>
                             </li>
                             <li class="menu__list-item">
@@ -44,7 +44,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <a href="https://en.wikipedia.org/wiki/Instagram" target="_blank" class="social-links">
+                    <a href="./Contact Us.html" class="social-links">
                         <img src="./images/InstaIcon.svg" alt="InstIcon" srcset="">
                     </a>
                 </div>
@@ -53,6 +53,19 @@
 
         <main class="main">
             <div class="container">
+                <div class="pageNavigation">
+                    <ul class="pageNavigation-list">
+                        <li class="pageNavigation-item">
+                            <a href="#OurHistoryAnchor" class="menu__list-link">Know More About Our History</a>
+                        </li>
+                        <li class="pageNavigation-item">
+                            <a href="#StandsForAnchor" class="menu__list-link">What We Stand For</a>
+                        </li>
+                        <li class="pageNavigation-item">
+                            <a href="#MenuPostAnchor" class="menu__list-link">Our Menu</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="about-1post">
                     <div class="knowMore-post__textBlock">
                         <div class="knowMore-post__tag">
@@ -128,14 +141,15 @@
                     </div>
                     <div class="knowMore-post__pics">
                         <div class="knowMore-post__1pic">
-                            <img src="./images/About us Image 1.png" alt="Coffee Making" title="Coffee Making" srcset="">
+                            <img src="./images/About us Image 1.png" alt="Coffee Making" title="Coffee Making"
+                                srcset="">
                         </div>
                         <div class="knowMore-post__2pic">
                             <img src="./images/About us Image 2.png" alt="Person" title="Person in the Cafe" srcset="">
                         </div>
                     </div>
                 </div>
-                <div class="about-2post">
+                <div class="about-2post" id="OurHistoryAnchor">
                     <div class="about-2post__inner">
                         <img class="about-2post__bg" src="./images/AboutBGPic.png" alt="" srcset="">
                         <img class="about-2post__bgover" src="./images/BG Overlay.png" alt="" srcset="">
@@ -191,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-standsPost">
+                <div class="about-standsPost" id="StandsForAnchor">
                     <h2 class="about-standsPost__title">Things our company stands for</h2>
                     <div class="about-standsPost__inner">
                         <h3 class="about-standsPost__inner-title">Edit this text to make it your own. To edit, simply
@@ -203,6 +217,75 @@
                             categorized with a voice and tone variation ranging from plain, casual to playful. The
                             intention to build this Figma plugin originated from our Medium blog post, Designing voice
                             and tone for error messages.</p>
+                    </div>
+                </div>
+                <div class="about-menu-post" id="MenuPostAnchor">
+                    <div class="knowMore-post__textBlock">
+                        <div class="knowMore-post__tag">
+                            <h4 class="knowMore-post__tag-text">KNOW MORE ABOUT US</h4>
+                            <img src="./images/Line.svg" alt="" srcset="">
+                        </div>
+                        <div class="knowMore-post__slogan">
+                            <ul class="knowMore-post__slogan-list">
+                                <li class="knowMore-post__slogan-item-title">
+                                    <h1 class="knowMore-post__slogan-title">
+                                        We source great food
+                                    </h1>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about__menu-list-block">
+                            <ol class="about__menu-list" type="1">
+                                <li class="header-post__info-item-title">
+                                    <h6 class="header-post__info-item-title">Fast Food</h6>
+                                    <ul class="about__menu-list-ul">
+                                        <li class="header-post__info-item-text">Chicken Burger</li>
+                                        <li class="header-post__info-item-text">French Fries</li>
+                                        <ul class="about__menu-list-ul">
+                                            <li class="header-post__info-item-text">Chinese Soup</li>
+                                            <li class="header-post__info-item-text">Chowmin Noodle</li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li class="header-post__info-item-title">
+                                    <h6 class="header-post__info-item-title">Coffee</h6>
+                                    <ul class="about__menu-list-ul">
+                                        <li class="header-post__info-item-text">Drp Coffee</li>
+                                        <li class="header-post__info-item-text">Dolgona Coffee</li>
+                                    </ul>
+                                </li>
+                                <li class="header-post__info-item-title">
+                                    <h6 class="header-post__info-item-title">Cocktails</h6>
+                                    <ul class="about__menu-list-ul">
+                                        <li class="header-post__info-item-text">Coka Cola</li>
+                                        <li class="header-post__info-item-text">Cocktail</li>
+                                    </ul>
+                                </li>
+                                <li class="header-post__info-item-title">
+                                    <h6 class="header-post__info-item-title">Quafe Cake</h6>
+                                    <ul class="about__menu-list-ul">
+                                        <li class="header-post__info-item-text">Choco Cup Cake</li>
+                                        <li class="header-post__info-item-text">Quafe Brade</li>
+                                    </ul>
+                                </li>
+                                <li class="header-post__info-item-title">
+                                    <h6 class="header-post__info-item-title">Snacks</h6>
+                                    <ul class="about__menu-list-ul">
+                                        <li class="header-post__info-item-text">Sandwitch</li>
+                                        <li class="header-post__info-item-text">Fruit Salad</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="knowMore-post__pics">
+                        <div class="knowMore-post__1pic">
+                            <img src="./images/About us Image 1.png" alt="Coffee Making" title="Coffee Making"
+                                srcset="">
+                        </div>
+                        <div class="knowMore-post__2pic">
+                            <img src="./images/About us Image 2.png" alt="Person" title="Person in the Cafe" srcset="">
+                        </div>
                     </div>
                 </div>
             </div>

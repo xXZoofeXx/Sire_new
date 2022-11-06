@@ -44,7 +44,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <a href="https://en.wikipedia.org/wiki/Instagram" target="_blank" class="social-links">
+                    <a href="./Contact Us.html" class="social-links">
                         <img src="./images/InstaIcon.svg" alt="InstIcon" srcset="">
                     </a>
                 </div>
@@ -53,28 +53,125 @@
 
         <main class="main">
             <div class="container">
-               <div class="contact__post">
-                <div class="contact__form-block">
-                    <h2 class="contact__form-title">Have a Question ? <br>
-                        Get in Touch with us 👋</h2>
-                    <p class="contact__form-text">Fill up the Form  and our team will get back to within 24 hrs</p>
-                    <div class="contact__form">
-                        <form action="#">
-                            <input class="form-item" type="text" name="Name" placeholder="Name" id="">
-                            <input class="form-item" type="email" name="Email" placeholder="Email" id="">
-                            <textarea class="form-item-message" type="text" name="Message" placeholder="Message" maxlength="250" id=""></textarea>
-                        </form>
+                <div class="pageNavigation-forms">
+                    <ul class="pageNavigation-list-forms" id="pageNavigation-list-forms">
+                        <li class="pageNavigation-item-forms menu__list-item-forms_active">
+                            <a href="#" class="menu__list-link-forms" id="FormChoice-Question">I Have Quastion</a>
+                        </li>
+                        <li class="pageNavigation-item-forms">
+                            <a href="#" class="menu__list-link-forms" id="FormChoice-Trouble">I Have Trouble with My Order</a>
+                        </li>
+                        <li class="pageNavigation-item-forms">
+                            <a href="#" class="menu__list-link-forms" id="FormChoice-Order">Make Order</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__post">
+                    <div class="contact__form-block">
+                        <h2 class="contact__form-title">Have a Question ? <br>
+                            Get in Touch with us 👋</h2>
+                        <p class="contact__form-text">Fill up the Form and our team will get back to within 24 hrs</p>
+                        <div class="contact__form">
+                            <form class="contact__userData-form"
+                                action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get"
+                                target="_blank">
+                                <input class="form-item" type="text" name="Name" placeholder="Name" id="">
+                                <input class="form-item" type="text" name="SecondName" placeholder="Second Name" id="">
+                                <input class="form-item" type="email" name="Email" placeholder="Email" id="">
+                                <input class="form-item" type="tel" name="Phone" placeholder="Phone" id="">
+                                <textarea class="form-item-message" type="text" name="Message" placeholder="Message"
+                                    maxlength="250" id=""></textarea>
+
+                                <input class="form-item-hidden" name="Current_date" type="date" id="formDate">
+
+                                <input class="form-item-new" name="000_file_name" size='30' type="Техт"
+                                    value="g07_ContactForm_test_Okulov.txt">
+                                <select class="form-item-new" name="010_mode">
+                                    <OPTION value="a">a - дозаписать в файл</OPTION>
+                                    <OPTION value="w">w - очисить файл и записать в файл</OPTION>
+                                </select>
+                                <input name="function" type="hidden" value="page">
+                                <input name="page_id" type="hidden" value="3">
+
+                                <button class="contact__form-button" type="submit">
+                                    <p class="sendMessage-text">Send Message</p>
+                                    <img class="sendMessage-arrow" src="./images/SendMessageArrow.svg" alt="" srcset="">
+                                </button>
+                                <button class="contact__form-button" type="reset">
+                                    <p class="sendMessage-text">Reset</p>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                    <button class="contact__form-button" type="submit">
-                        <p class="sendMessage-text">Send Message</p>
-                        <img class="sendMessage-arrow" src="./images/SendMessageArrow.svg" alt="" srcset="">
-                    </button>
+                    <div class="contact__pics">
+                        <img class="contact__pics1" src="./images/Contact Image 1.png" alt="Street Seats"
+                            title="Street Tables" srcset="">
+                        <img class="contact__pics2" src="./images/Contact Image 2.png" alt="Coffe cup"
+                            title="Making Coffee" srcset="">
+                    </div>
                 </div>
-                <div class="contact__pics">
-                    <img class="contact__pics1" src="./images/Contact Image 1.png" alt="Street Seats" title="Street Tables" srcset="">
-                    <img class="contact__pics2" src="./images/Contact Image 2.png" alt="Coffe cup" title="Making Coffee" srcset="">
+                <div class="contact__post2 contact-post-hidden">
+                    <div class="contact__form-block2">
+                        <h2 class="contact__form-title">Have a Trouble with Your Order? <br>
+                            Get in Touch with us 👋</h2>
+                        <p class="contact__form-text">Fill up the Form and our team will get back to within 15 minutes
+                        </p>
+                        <div class="contact__form2">
+                            <form class="contact__userTrouble-form"
+                                action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get"
+                                target="_blank">
+                                <input class="form-item" type="text" name="UserName" placeholder="Name" id="">
+                                <input class="form-item" type="text" name="OrderNumder" placeholder="Order Numder"
+                                    id="">
+                                
+                                <input class="form-item" type="tel" name="UserPhone" placeholder="Phone" id="">
+                                <div class="contact__form-raw">
+                                    <select class="form-item-new-main" name="OrderType"
+                                        aria-placeholder="What's the Order Type?">
+                                        <option value="" disabled selected hidden>What's the Order Type?</option>
+                                        <option value="InCafe">In Cafe</option>
+                                        <option value="Delivery">Delivery</option>
+                                    </select>
+                                    <select class="form-item-new-main" name="TroubleType"
+                                        aria-placeholder="What's the Trouble Type?">
+                                        <option value="" disabled selected hidden>What's the Trouble Type?</option>
+                                        <option value="TroublesWithFood">Troubles with Food</option>
+                                        <option value="TroublesWithStaff">Troubles with Staff</option>
+                                        <option value="TroublesWithDelivery">Troubles with Delivery</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <textarea class="form-item-message2" type="text" name="UserTrouble"
+                                    placeholder="What Happened?" maxlength="400" id=""></textarea>
+
+                                <input class="form-item-hidden" name="Current_date" type="date" id="formDate">
+
+                                <div class="contact__form-raw">
+                                    <input class="form-item-new" name="000_file_name" size='30' type="Техт"
+                                        value="g07_TroubleForm_test_Okulov.txt">
+                                    <select class="form-item-new" name="010_mode">
+                                        <OPTION value="a">a - дозаписать в файл</OPTION>
+                                        <OPTION value="w">w - очисить файл и записать в файл</OPTION>
+                                    </select>
+                                </div>
+                                <input name="function" type="hidden" value="page">
+                                <input name="page_id" type="hidden" value="3">
+
+                                <button class="contact__form-button" type="submit">
+                                    <p class="sendMessage-text">Send Message</p>
+                                    <img class="sendMessage-arrow" src="./images/SendMessageArrow.svg" alt="" srcset="">
+                                </button>
+                                <button class="contact__form-button" type="reset">
+                                    <p class="sendMessage-text">Reset</p>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
-               </div>
+                <div class="contact__post3 contact-post-hidden">
+
+                </div>
             </div>
         </main>
 
@@ -151,6 +248,8 @@
 
 
     <script src="./js/main.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/date.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
 
