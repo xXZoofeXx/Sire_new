@@ -19,7 +19,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a class="logo" href="#">
+                    <a class="logo" href="./index.html">
                         <img src="images/Logo.svg" alt="">
                     </a>
                     <nav class="menu">
@@ -56,10 +56,11 @@
                 <div class="pageNavigation-forms">
                     <ul class="pageNavigation-list-forms" id="pageNavigation-list-forms">
                         <li class="pageNavigation-item-forms menu__list-item-forms_active">
-                            <a href="#" class="menu__list-link-forms" id="FormChoice-Question">I Have Quastion</a>
+                            <a href="#" class="menu__list-link-forms" id="FormChoice-Question">I Have Question</a>
                         </li>
                         <li class="pageNavigation-item-forms">
-                            <a href="#" class="menu__list-link-forms" id="FormChoice-Trouble">I Have Trouble with My Order</a>
+                            <a href="#" class="menu__list-link-forms" id="FormChoice-Trouble">I Have Trouble with My
+                                Order</a>
                         </li>
                         <li class="pageNavigation-item-forms">
                             <a href="#" class="menu__list-link-forms" id="FormChoice-Order">Make Order</a>
@@ -123,7 +124,7 @@
                                 <input class="form-item" type="text" name="UserName" placeholder="Name" id="">
                                 <input class="form-item" type="text" name="OrderNumder" placeholder="Order Numder"
                                     id="">
-                                
+
                                 <input class="form-item" type="tel" name="UserPhone" placeholder="Phone" id="">
                                 <div class="contact__form-raw">
                                     <select class="form-item-new-main" name="OrderType"
@@ -169,10 +170,246 @@
                     </div>
 
                 </div>
-                <div class="contact__post3 contact-post-hidden">
+                <div class="contact__post3 ">
+                    <h2 class="contact__form-title">Don't Wanna Wait in Line? <br>
+                        Make the Order Online!</h2>
+                    <div class="contact__form3">
+                        <form class="contact__userOrder-form" action="#" method="get" target="_blank">
+                            <div class="userOrder-goodsGrid">
 
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/ChickenBurger.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Chicken Burger</p>
+                                        <p class="goodGrid-item-info-text2" id="BurgerPriceId">$8.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id="Burger_btn-min"></button>
+                                                <input class="goodGrid-item-btn-value" type="number" name="ChickenBurger" placeholder="0" id="BurgerCurrentValue" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id="Burger_btn-plus"></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum" id="">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 5</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/FrenchFries.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">French Fries</p>
+                                        <p class="goodGrid-item-info-text2" id="FriesPriceId">$7.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="FrenchFries" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 5</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/ChineseSoup.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Chinese Soup</p>
+                                        <p class="goodGrid-item-info-text2" id="SoupPriceId">$8.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="ChineseSoup" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/ChowminNoodle.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Chowmin Noodle</p>
+                                        <p class="goodGrid-item-info-text2" id="NoodlePriceId">$8.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="ChowminNoodle" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 5</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/DrpCoffee.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Drp Coffee</p>
+                                        <p class="goodGrid-item-info-text2" id="DrpCoffeePriceId">$8.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="DrpCoffee" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 8</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/DalgonaCoffee.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Dalgona Coffee</p>
+                                        <p class="goodGrid-item-info-text2" id="DalgonaPriceId">$4.97</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="DalgonaCoffee" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 4</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/CokaCola.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Coka Cola</p>
+                                        <p class="goodGrid-item-info-text2" id="ColaPriceId">$3.5</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="CokaCola" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 10</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/Cocktails.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Cocktail</p>
+                                        <p class="goodGrid-item-info-text2" id="CocktailPriceId">$8.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="Cocktail" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 8</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/ChocoCupCake.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Choco Cup Cake</p>
+                                        <p class="goodGrid-item-info-text2" id="CupCakePriceId">$4.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="ChocoCupCake" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 6</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/QuafeBrade.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Quafe Brade</p>
+                                        <p class="goodGrid-item-info-text2" id="QuafeBradePriceId">$7.85</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="QuafeBrade" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 9</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/Sandwitch.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Sandwitch</p>
+                                        <p class="goodGrid-item-info-text2" id="SandwitchPriceId">$3.97</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="Sandwitch" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 14</p>
+                                    </div>
+                                </div>
+
+                                <div class="userOrder-goodGrid-item" id="" name="">
+                                    <img class="goodGrid-item-img" src="./images/FruitSalad.png" alt="" srcset="">
+                                    <div class="goodGrid-item-info">
+                                        <p class="goodGrid-item-info-text">Fruit Salad</p>
+                                        <p class="goodGrid-item-info-text2" id="FruitSaladPriceId">$3.97</p>
+                                    </div>
+                                    <div class="goodGrid-item-orderBlock">
+                                        <div class="goodGrid-item-btn">
+                                            <div class="goodGrid-item-btn-container">
+                                                <button class="goodGrid-item-btn-min" type="button" id=""></button>
+                                                <input class="goodGrid-item-btn-value" type="text" name="FruitSalad" placeholder="0" id="" readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button" id=""></button>
+                                            </div>
+                                            <p class="goodGrid-item-btn-sum">$0.00</p>
+                                        </div>
+                                        <p class="goodGrig-item-btn-info">Available Number: 0</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
-            </div>
         </main>
 
         <footer class="footer">
@@ -250,6 +487,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/forms.js"></script>
     <script src="./js/date.js"></script>
+    <script src="./js/goodFrom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
 

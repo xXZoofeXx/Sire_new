@@ -32,7 +32,7 @@ btnUp.addEventListener();
 
 // Header link position
 
-var btnContainer = document.getElementById("headerLinkContainer");
+/* var btnContainer = document.getElementById("headerLinkContainer");
 var btns = btnContainer.getElementsByClassName("menu__list-item");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
@@ -40,7 +40,7 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" menu__list-item_active", "");
     this.className += " menu__list-item_active";
   });
-}
+} */
 
 // picture frame 
 

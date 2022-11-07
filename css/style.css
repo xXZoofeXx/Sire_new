@@ -1443,6 +1443,8 @@ textarea {
   margin-left: 64px;
 }
 
+/* ---------------------------CONTACT PAGE 2 form */
+
 .contact__post2 {
   display: flex;
   height: auto;
@@ -1562,4 +1564,236 @@ textarea {
 
 .pageNavigation-item-forms{
   padding-left: 40px;
+}
+
+/* ---------------------------CONTACT PAGE 3 form */
+
+.contact__post3{
+  
+  height: auto;
+  margin-bottom: 160px;
+  margin-top: 96px;
+  
+}
+
+.contact__form3{
+  width: 1250px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.contact__userOrder-form{}
+
+.userOrder-goodsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 32px;
+
+}
+
+.userOrder-goodGrid-item{
+  width: auto;
+  background: #1F1D21;
+  border-radius: 20px;
+}
+
+.goodGrid-item-img{
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.goodGrid-item-info{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.goodGrid-item-info-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.goodGrid-item-info-text2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.goodGrid-item-orderBlock{
+  height: 88px;
+  width: 100%;
+}
+
+.goodGrid-item-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.goodGrid-item-btn-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+}
+
+.goodGrid-item-btn-min{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #2E2D33;
+  border: none;
+  position: relative;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.goodGrid-item-btn-min::before{
+  content: "";
+  display: block;
+  width: 18px;
+  height: 1px;
+  background-color: #FFB577;
+  background-size: 100% 100%;
+  margin: auto;
+}
+
+.goodGrid-item-btn-min:hover{
+  background: #fff;
+}
+
+/* .menu__list-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  display: none;
+
+  background-color: #FFB577;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+} */
+
+.goodGrid-item-btn-value{
+  width: 60px;
+  height: 30px;
+  border: 1px solid #2E2D33;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.goodGrid-item-btn-plus{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #2E2D33;
+  border: none;
+  position: relative;
+  transition: .3s;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.goodGrid-item-btn-plus::before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+  background-image: url(../images/CrossIcon.svg);
+  transform: rotate(45deg);
+}
+
+.goodGrid-item-btn-plus:hover{
+  background: #fff;
+}
+
+.goodGrid-item-btn-plus-inactive{
+  opacity: 0.3;
+  cursor:default;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #2E2D33;
+  border: none;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.goodGrid-item-btn-plus-inactive::before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+  background-image: url(../images/CrossIcon.svg);
+  transform: rotate(45deg);
+}
+
+.goodGrid-item-btn-sum{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fc894d;
+  opacity: 0.87;
+}
+
+.goodGrig-item-btn-info{
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.goodGrig-item-btn-info-lighted{
+  color:#961735;
+  opacity: 1;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }
