@@ -83,7 +83,7 @@
                                 <textarea class="form-item-message" type="text" name="Message" placeholder="Message"
                                     maxlength="250" id=""></textarea>
 
-                                <input class="form-item-hidden" name="Current_date" type="date" id="formDate">
+                                <input class="hidden" name="Current_date" type="date" id="formDate">
 
                                 <input class="form-item-new" name="000_file_name" size='30' type="Техт"
                                     value="g07_ContactForm_test_Okulov.txt">
@@ -145,7 +145,7 @@
                                 <textarea class="form-item-message2" type="text" name="UserTrouble"
                                     placeholder="What Happened?" maxlength="400" id=""></textarea>
 
-                                <input class="form-item-hidden" name="Current_date" type="date" id="formDate">
+                                <input class="hidden" name="Current_date" type="date" id="formDate2">
 
                                 <div class="contact__form-raw">
                                     <input class="form-item-new" name="000_file_name" size='30' type="Техт"
@@ -170,11 +170,11 @@
                     </div>
 
                 </div>
-                <div class="contact__post3 ">
-                    <h2 class="contact__form-title">Don't Wanna Wait in Line? <br>
+                <div class="contact__post3 contact-post-hidden">
+                    <h2 class="contact__form-title">Don't Wanna Wait in Line? <a name="Form3Anchor"></a><br>
                         Make the Order Online!</h2>
                     <div class="contact__form3">
-                        <form class="contact__userOrder-form" action="#" method="get" target="_blank">
+                        <form class="contact__userOrder-form" action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" target="_blank" id="UserOrderFormEnter">
                             <div class="userOrder-goodsGrid">
 
                                 <div class="userOrder-goodGrid-item" id="" name="">
@@ -186,9 +186,13 @@
                                     <div class="goodGrid-item-orderBlock">
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
-                                                <button class="goodGrid-item-btn-min" type="button" id="Burger_btn-min"></button>
-                                                <input class="goodGrid-item-btn-value" type="number" name="ChickenBurger" placeholder="0" id="BurgerCurrentValue" readonly>
-                                                <button class="goodGrid-item-btn-plus" type="button" id="Burger_btn-plus"></button>
+                                                <button class="goodGrid-item-btn-min" type="button"
+                                                    id="Burger_btn-min"></button>
+                                                <input class="goodGrid-item-btn-value" type="number"
+                                                    name="ChickenBurger" placeholder="0" id="BurgerCurrentValue"
+                                                    readonly>
+                                                <button class="goodGrid-item-btn-plus" type="button"
+                                                    id="Burger_btn-plus"></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum" id="">$0.00</p>
                                         </div>
@@ -206,7 +210,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="FrenchFries" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="FrenchFries"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -225,7 +230,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="ChineseSoup" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="ChineseSoup"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -244,7 +250,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="ChowminNoodle" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="ChowminNoodle"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -263,7 +270,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="DrpCoffee" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="DrpCoffee"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -282,7 +290,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="DalgonaCoffee" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="DalgonaCoffee"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -301,7 +310,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="CokaCola" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="CokaCola"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -320,7 +330,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="Cocktail" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="Cocktail"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -332,14 +343,15 @@
                                 <div class="userOrder-goodGrid-item" id="" name="">
                                     <img class="goodGrid-item-img" src="./images/ChocoCupCake.png" alt="" srcset="">
                                     <div class="goodGrid-item-info">
-                                        <p class="goodGrid-item-info-text">Choco Cup Cake</p>
+                                        <p class="goodGrid-item-info-text">Cup Cake</p>
                                         <p class="goodGrid-item-info-text2" id="CupCakePriceId">$4.85</p>
                                     </div>
                                     <div class="goodGrid-item-orderBlock">
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="ChocoCupCake" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="ChocoCupCake"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -358,7 +370,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="QuafeBrade" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="QuafeBrade"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -377,7 +390,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="Sandwitch" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="Sandwitch"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -396,7 +410,8 @@
                                         <div class="goodGrid-item-btn">
                                             <div class="goodGrid-item-btn-container">
                                                 <button class="goodGrid-item-btn-min" type="button" id=""></button>
-                                                <input class="goodGrid-item-btn-value" type="text" name="FruitSalad" placeholder="0" id="" readonly>
+                                                <input class="goodGrid-item-btn-value" type="text" name="FruitSalad"
+                                                    placeholder="0" id="" readonly>
                                                 <button class="goodGrid-item-btn-plus" type="button" id=""></button>
                                             </div>
                                             <p class="goodGrid-item-btn-sum">$0.00</p>
@@ -404,9 +419,110 @@
                                         <p class="goodGrig-item-btn-info">Available Number: 0</p>
                                     </div>
                                 </div>
-                               
-                            </div>
 
+                            </div>
+                            <div class="userOrder-DataForm">
+                                <div class="userOrder-ContactData">
+                                    <h2 class="contact__form-title">Finish Your Order!</h2>
+
+                                    <div class="userOrder-ContactData-formbox">
+                                        <input class="form-item" type="text" name="Name" placeholder="Name" id="UserOrderFormName">
+                                        <input class="form-item" type="tel" name="Phone" placeholder="Phone" id="UserOrderFormPhone">
+                                        <select class="form-item-new-main" name="OrderType"
+                                            aria-placeholder="What's the Order Type?" id="UserOrderTypeId">
+                                            <option value="" disabled selected hidden>What's the Order Type?</option>
+                                            <option value="InCafe">In Cafe</option>
+                                            <option value="Delivery">Delivery</option>
+                                        </select>
+                                        <input class="form-item hidden" type="text" name="Address" placeholder="Address" id="UserOrderTypeAdressId">
+                                        <input class="form-item hidden form-item-time" type="time" name="TimeOfOrder"
+                                            placeholder="Choose the time" id="UserOrderTypeTimeId">
+
+                                        <textarea class="form-item-message" type="text" name="Message"
+                                            placeholder="Message" maxlength="250" id=""></textarea>
+
+                                        <input class="hidden" name="Current_date" type="date" id="formDate3">
+                                        <input class="hidden" name="TotalOrderSum" type="text" id="TotalOrderSumInput">
+
+                                        <input class="form-item-new" name="000_file_name" size='30' type="Техт"
+                                            value="g07_ContactForm_test_Okulov.txt">
+                                        <select class="form-item-new" name="010_mode">
+                                            <OPTION value="a">a - дозаписать в файл</OPTION>
+                                            <OPTION value="w">w - очисить файл и записать в файл</OPTION>
+                                        </select>
+                                        <input name="function" type="hidden" value="page">
+                                        <input name="page_id" type="hidden" value="3">
+
+                                        <button class="contact__form-button" type="button" id="OrderFormButtonSubmit">
+                                            <p class="sendMessage-text">Order !</p>
+                                            <img class="sendMessage-arrow" src="./images/SendMessageArrow.svg" alt=""
+                                                srcset="">
+                                        </button>
+                                        
+                                    </div>
+                                </div>
+                                <div class="userOrder-Summary">
+                                    <table class="userOrder-SummaryTable">
+                                        <thead>
+                                            <tr class="SummaryTableRaw-HeadImg">
+                                                <th colspan="3">
+                                                    <div class="SummaryTable-CellBox">
+                                                        <img src="./images/Logo.svg" alt="" srcset="">
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="SummaryTableRaw-Head">
+                                                <td class="SummaryTable-cell-main-name" colspan="1">
+                                                    <div class="SummaryTable-CellBox">
+                                                        <p>Item Name</p>
+                                                    </div>
+                                                </td>
+                                                <td class="SummaryTable-cell-main-q" colspan="1">
+                                                    <div class="SummaryTable-CellBox">
+                                                        <p>Quantity</p>
+                                                    </div>
+                                                </td>
+                                                <td class="SummaryTable-cell-main-sum" colspan="1">
+                                                    <div class="SummaryTable-CellBox">
+                                                        <p>Sum</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                           
+
+                                            <tr class="SummaryTableRaw-Finall">
+                                                <td class="SummaryTable-cell-main" colspan="1">
+                                                    <div class="SummaryTable-Cellbox-finall">
+                                                        <p>Total:</p>
+                                                    </div>
+                                                </td>
+                                                <td class="SummaryTable-cell-main-price" colspan="2">
+                                                    <div class="SummaryTable-Cellbox-price">
+                                                        <p id="SummaryTableTotalSum">$0.00</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="SummaryTableRaw-Link">
+                                                <td class="SummaryTable-cell-main" colspan="2">
+                                                    <div class="SummaryTable-CellBox">
+                                                        <a href="#Form3Anchor" class="menu__list-link-forms">Change My
+                                                            Order</a>
+                                                    </div>
+                                                </td>
+                                                <td class="SummaryTable-cell-main" colspan="1">
+                                                    <div class="SummaryTable-CellBox">
+                                                        <img src="./images/SendMessageArrow.svg" alt="" srcset="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

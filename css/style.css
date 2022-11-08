@@ -1366,9 +1366,7 @@ textarea {
   appearance: none;
 }
 
-.form-item-hidden{
-  display: none;
-}
+
 
 .form-item-message {
   height: 147px;
@@ -1582,8 +1580,6 @@ textarea {
   margin-bottom: 30px;
 }
 
-.contact__userOrder-form{}
-
 .userOrder-goodsGrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1796,4 +1792,156 @@ input[type=number]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0;
+}
+
+.userOrder-DataForm{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.userOrder-ContactData{
+  width: 625px;
+}
+
+.userOrder-ContactData-formbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.userOrder-Summary{
+  width: 600px;
+  margin-top: 82px;
+}
+
+.userOrder-SummaryTable{
+  width: 600px;
+  border: 1px solid #FFFFFF0A;
+  /* background-image: url(../images/TableBG.jpg); */
+  background-image: url(../images/TableBG.jpg);
+  background-size: 100% 522px;
+  
+}
+
+.SummaryTableRaw-HeadImg{
+  border: 1px solid #FFFFFF0A;
+  height: 50px;
+}
+
+.SummaryTable-CellBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SummaryTableRaw-Head{
+  width: 600px;
+  height: 40px;
+  border: 1px solid #FFFFFF0A;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fc894d;
+  opacity: 0.87;
+}
+
+.SummaryTable-cell-main-name{
+  width: 300px;
+  border: 1px solid #FFFFFF0A;
+}
+
+.SummaryTable-cell-main-q{
+  width: 150px;
+  border: 1px solid #FFFFFF0A;
+}
+
+.SummaryTable-cell-main-sum{
+  width: 150px;
+  border: 1px solid #FFFFFF0A;
+}
+
+.SummaryTableRaw-Finall{
+  height: 60px;
+  border: 1px solid #FFFFFF0A;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
+.SummaryTable-Cellbox-finall{
+  padding-left: 30px;
+}
+
+.SummaryTable-cell-main-price{
+  color: #fc894d;
+}
+
+.SummaryTable-Cellbox-price{
+  padding-right: 30px;
+  display: flex;
+  justify-content: right;
+}
+
+.SummaryTable-cell-main{
+  border: 1px solid #FFFFFF0A;
+  
+}
+
+.SummaryTableRaw-Link{
+  height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.SummaryTable-cell-main-price{
+  border: 1px solid #FFFFFF0A;
+}
+
+/* .SummaryTable-cell{
+  height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+} */
+
+.SummaryTableRaw{
+  height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-item-time{
+  text-align: center;
+}
+
+#UserOrderTypeTimeId::before{
+ content: 'Choose time:';
+ opacity: .4;
 }

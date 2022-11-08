@@ -68,17 +68,48 @@ document.addEventListener('click', function (e) {
 
             let CurrentGoodValue = e.target.parentElement.querySelector("input").value;
             let CurrentGoodPriceText = e.target.parentElement.parentElement.parentElement.parentElement.querySelector("div.goodGrid-item-info p.goodGrid-item-info-text2").textContent;
-            let CurrentGoodPrice = CurrentGoodPriceText.replace('$', '');
+            let CurrentGoodPrice = +CurrentGoodPriceText.replace('$', '');
             let CurrentPriceSum = (CurrentGoodValue * CurrentGoodPrice).toFixed(2);
             e.target.parentElement.parentElement.querySelector("p").innerHTML = "$" + CurrentPriceSum;
 
-            
+
             if (CurrentGoodValue == CurrentAvailableNumber) {
                 e.target.parentElement.querySelector("button.goodGrid-item-btn-plus").classList.add('goodGrid-item-btn-plus-inactive');
                 e.target.parentElement.querySelector("button.goodGrid-item-btn-plus").classList.remove('goodGrid-item-btn-plus');
                 /* e.target.parentElement.querySelector("button.goodGrid-item-btn-plus").setAttribute('disabled', ''); */
                 e.target.parentElement.parentElement.parentElement.querySelector("p.goodGrig-item-btn-info").classList.add('goodGrig-item-btn-info-lighted');
-            }
+            };
+
+            // making table
+            let CurrentGoodNameFull = e.target.parentElement.parentElement.parentElement.parentElement.querySelector("div.goodGrid-item-info p.goodGrid-item-info-text").textContent;
+            let CurrentGoodName = CurrentGoodNameFull.replace(' ', '');
+            let CurrentCreatedRawId = CurrentGoodName + 'TableId';
+            let QCurrentCreatedRawId = '#' + CurrentCreatedRawId;
+            if (CurrentGoodValue == 1) {
+                $('.userOrder-SummaryTable .SummaryTableRaw-Head').after('<tr class="SummaryTableRaw" id=""><td><div class="SummaryTable-CellBox" id="TableDivName"><p>Name</p></div></td><td><div class="SummaryTable-CellBox" id="TableDivQ"><p>Q</p></div></td><td><div class="SummaryTable-CellBox" id="TableDivSum"><p>Sum</p></div></td></tr>');
+                let CurrentCreatedRaw = $('.userOrder-SummaryTable .SummaryTableRaw');
+                CurrentCreatedRaw = CurrentCreatedRaw[0];
+
+                CurrentCreatedRaw.id = CurrentCreatedRawId;
+
+                document.querySelector(`${QCurrentCreatedRawId} #TableDivName p`).innerHTML = CurrentGoodNameFull;
+                document.querySelector(`${QCurrentCreatedRawId} #TableDivQ p`).innerHTML = CurrentGoodValue;
+                document.querySelector(`${QCurrentCreatedRawId} #TableDivSum p`).innerHTML = ('$' + CurrentPriceSum);
+
+
+
+            } else {
+
+                document.querySelector(`${QCurrentCreatedRawId} #TableDivQ p`).innerHTML = CurrentGoodValue;
+                document.querySelector(`${QCurrentCreatedRawId} #TableDivSum p`).innerHTML = ('$' + CurrentPriceSum);
+            };
+
+            /* console.log(document.querySelector('#SummaryTableTotalSum').textContent); */
+            let CurrentFinalSumText = document.querySelector('#SummaryTableTotalSum').textContent;
+            let CurrentFinalSum = +CurrentFinalSumText.replace('$', '');
+            let NewCurrentFinalSum = (CurrentFinalSum + CurrentGoodPrice).toFixed(2);
+            document.querySelector('#SummaryTableTotalSum').innerHTML = ('$' + NewCurrentFinalSum);
+
         }
     } else if (e.target.classList.contains("goodGrid-item-btn-min")) {
         if (e.target.parentElement.querySelector("input").value > 1) {
@@ -86,29 +117,92 @@ document.addEventListener('click', function (e) {
 
             let CurrentGoodValue = e.target.parentElement.querySelector("input").value;
             let CurrentGoodPriceText = e.target.parentElement.parentElement.parentElement.parentElement.querySelector("div.goodGrid-item-info p.goodGrid-item-info-text2").textContent;
-            let CurrentGoodPrice = CurrentGoodPriceText.replace('$', '');
+            let CurrentGoodPrice = +CurrentGoodPriceText.replace('$', '');
             let CurrentPriceSum = (CurrentGoodValue * CurrentGoodPrice).toFixed(2);
             e.target.parentElement.parentElement.querySelector("p").innerHTML = "$" + CurrentPriceSum;
 
             let CurrentAvailableNumberText = e.target.parentElement.parentElement.parentElement.querySelector("p.goodGrig-item-btn-info").textContent;
             let CurrentAvailableNumber = +CurrentAvailableNumberText.replace('Available Number: ', '');
 
+
+            let CurrentGoodNameFull = e.target.parentElement.parentElement.parentElement.parentElement.querySelector("div.goodGrid-item-info p.goodGrid-item-info-text").textContent;
+            let CurrentGoodName = CurrentGoodNameFull.replace(' ', '');
+            let CurrentCreatedRawId = CurrentGoodName + 'TableId';
+            let QCurrentCreatedRawId = '#' + CurrentCreatedRawId;
+            document.querySelector(`${QCurrentCreatedRawId} #TableDivQ p`).innerHTML = CurrentGoodValue;
+            document.querySelector(`${QCurrentCreatedRawId} #TableDivSum p`).innerHTML = ('$' + CurrentPriceSum);
+
             if (CurrentGoodValue == (CurrentAvailableNumber - 1)) {
                 e.target.parentElement.querySelector("button.goodGrid-item-btn-plus-inactive").classList.add('goodGrid-item-btn-plus');
                 e.target.parentElement.querySelector("button.goodGrid-item-btn-plus").classList.remove('goodGrid-item-btn-plus-inactive');
                 e.target.parentElement.querySelector("button.goodGrid-item-btn-plus").removeAttribute('disabled');
                 e.target.parentElement.parentElement.parentElement.querySelector("p.goodGrig-item-btn-info").classList.remove('goodGrig-item-btn-info-lighted');
-            }
+            };
+            let CurrentFinalSumText = document.querySelector('#SummaryTableTotalSum').textContent;
+            let CurrentFinalSum = +CurrentFinalSumText.replace('$', '');
+            let NewCurrentFinalSum = (CurrentFinalSum - CurrentGoodPrice).toFixed(2);
+            document.querySelector('#SummaryTableTotalSum').innerHTML = ('$' + NewCurrentFinalSum);
 
         } else {
             e.target.parentElement.querySelector("input").value = "";
-            e.target.parentElement.parentElement.querySelector("p").innerHTML = "$0.00"
+            e.target.parentElement.parentElement.querySelector("p").innerHTML = "$0.00";
+
+            let CurrentGoodNameFull = e.target.parentElement.parentElement.parentElement.parentElement.querySelector("div.goodGrid-item-info p.goodGrid-item-info-text").textContent;
+            let CurrentGoodName = CurrentGoodNameFull.replace(' ', '');
+            let CurrentCreatedRawId = CurrentGoodName + 'TableId';
+            let QCurrentCreatedRawId = '#' + CurrentCreatedRawId;
+            document.querySelector(QCurrentCreatedRawId).remove();
+
+            let CurrentGoodPriceText = e.target.parentElement.parentElement.parentElement.parentElement.querySelector("div.goodGrid-item-info p.goodGrid-item-info-text2").textContent;
+            let CurrentGoodPrice = +CurrentGoodPriceText.replace('$', '');
+
+            let CurrentFinalSumText = document.querySelector('#SummaryTableTotalSum').textContent;
+            let CurrentFinalSum = +CurrentFinalSumText.replace('$', '');
+            let NewCurrentFinalSum = (CurrentFinalSum - CurrentGoodPrice).toFixed(2);
+            document.querySelector('#SummaryTableTotalSum').innerHTML = ('$' + NewCurrentFinalSum);
         };
     }
-})
+});
 
+//Contact data form 
 
+const OrderTypeInputChange = {
+    addEventListener() {
+        document.querySelector('#UserOrderTypeId').onclick = () => {
+            if (document.querySelector('#UserOrderTypeId').value == "InCafe") {
+                document.querySelector('#UserOrderTypeAdressId').classList.add('hidden');
+                document.querySelector('#UserOrderTypeTimeId').classList.remove('hidden');
+                document.querySelector('#UserOrderTypeAdressId').value = "";
+            } else if (document.querySelector('#UserOrderTypeId').value == "Delivery") {
+                document.querySelector('#UserOrderTypeAdressId').classList.remove('hidden');
+                document.querySelector('#UserOrderTypeTimeId').classList.add('hidden');
+                document.querySelector('#UserOrderTypeTimeId').value = "";
+            }
+        }
+    }
+};
 
+OrderTypeInputChange.addEventListener();
 
+const FormSubmitOrder = {
+    addEventListener() {
+        document.querySelector('#OrderFormButtonSubmit').onclick = () => {
+            let Total = document.querySelector('#SummaryTableTotalSum').textContent;
+            if (Total == "$0.00") {
+                alert('Order Something First!');
+            } else if (document.querySelector('#UserOrderTypeId').value == "") {
+                alert('Choose the order type !');
+            } else if (document.querySelector('#UserOrderFormName').value == "") {
+                alert('Fill your name !');
+            } else if (document.querySelector('#UserOrderFormPhone').value == "") {
+                alert('Fill your phone number !');
+            } else {
+                document.querySelector('#TotalOrderSumInput').value = Total;
+                document.querySelector('#UserOrderFormEnter').submit();
+            }
 
+        }
+    }
+};
 
+FormSubmitOrder.addEventListener();

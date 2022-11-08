@@ -77,7 +77,7 @@ const PicFrame = {
       this.show(),
       $('body').addClass('stop-scrolling')
     };
-    document.querySelector('.pictureFrame-button').onclick = () => {
+    document.querySelector('.pictureFrame').onclick = () => {
       this.hide(),
       $('body').removeClass('stop-scrolling')
     }
